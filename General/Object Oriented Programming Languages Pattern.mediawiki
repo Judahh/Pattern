@@ -1,0 +1,400 @@
+= Object Oriented Programming Languages Pattern =
+
+== Mandatory ==
+*	Always use Camel notation. 
+*	Do NOT use acronyms and reduced words.
+*	All code should be written in english.
+*	The name of every structure should show the type of the structure, unless its void or a class.
+=== Structure ===
+*	Tab size should be equivalent to 5 spaces.
+*	If structure ultrapass 100 charateres wrap where necessary.
+*	Open braces, open parentheses, open brackets, less than always should be aside of last element, without spaces and new lines.
+*	Close braces, close parentheses, close brackets, bigger than always should be aside of semicolon, if it has, without spaces and new lines.
+*	if the struture permits braces, use them.
+=== Files, Packages and Namespaces  ===
+*	A fully-qualified namespace and class must have the following structure <code>\<Vendor Name>\<File Type>\<Namespace>\<Class Name></code>
+*	Each namespace must have a top-level namespace ("Vendor Name").
+*	Each namespace can have as many sub-namespaces as it wishes.
+*	Should start as upper case.
+==== Examples ====
+*	<code>\Doctrine\Common\IsolatedClassLoader</code> => <code>/Path/To/Project/Library/4CarrUs/Php/Doctrine/Common/IsolatedClassLoader.php</code>
+*	<code>\Symfony\Core\Request</code> => <code>/Path/To/Project/Library/Vendor/Php/Symfony/Core/Request.php</code>
+*	<code>\Zend\Acl</code> => <code>/Path/To/Project/Library/Vendor/Stylesheet/Zend/Acl.css</code>
+*	<code>\Zend\Mail\Message</code> => <code>/Path/To/Project/Library/Vendor/Java/Zend/Mail/Message.java</code>
+=== Classes, Objects, Variables, Functions, Methods and other structures ===
+*	If possible always make its visibility private, if not make them protected, if still not possible then you make them public.
+==== Classes ====
+*	Should start as upper case.
+*	If possible always use one file for a single class.
+===== Structure =====
+===== Examples =====
+<pre style="white-space: pre-wrap; 
+white-space: -moz-pre-wrap; 
+white-space: -pre-wrap; 
+white-space: -o-pre-wrap; 
+word-wrap: break-word;">
+	class Example{
+		...
+	}
+</pre>
+<pre style="white-space: pre-wrap; 
+white-space: -moz-pre-wrap; 
+white-space: -pre-wrap; 
+white-space: -o-pre-wrap; 
+word-wrap: break-word;">
+	interface InterfaceExample{
+		...
+	}
+</pre>
+<pre style="white-space: pre-wrap; 
+white-space: -moz-pre-wrap; 
+white-space: -pre-wrap; 
+white-space: -o-pre-wrap; 
+word-wrap: break-word;">
+	class Example extends OtherClass{
+		...
+	}
+</pre>
+<pre style="white-space: pre-wrap; 
+white-space: -moz-pre-wrap; 
+white-space: -pre-wrap; 
+white-space: -o-pre-wrap; 
+word-wrap: break-word;">
+	class Example ex|tends OtherClass{
+		...			|
+	}				|
+</pre> =>
+<pre style="white-space: pre-wrap; 
+white-space: -moz-pre-wrap; 
+white-space: -pre-wrap; 
+white-space: -o-pre-wrap; 
+word-wrap: break-word;">
+	class Example ex|tends
+		OtherClass{	|
+		...			|
+	}				|
+</pre>
+<pre style="white-space: pre-wrap; 
+white-space: -moz-pre-wrap; 
+white-space: -pre-wrap; 
+white-space: -o-pre-wrap; 
+word-wrap: break-word;">
+	class ExempleWithGenericType<S, T extends Element & List>{
+		...
+	}
+</pre>
+==== Objects and Variables ====
+*	Should start as lower case.
+*	Always make getters and setters.
+===== Examples =====
+*	<code>int idade</code> => <code>int integerAge</code>
+*	<code>new Database main</code> => <code>new Database databaseMain</code>
+===== Constants =====
+*	Constants should specify on name.
+====== Examples ======
+*	<code>const double precoFixo</code> => <code>const double constantDoubleFixedPrice</code>
+==== Functions and Methods ====
+*	Should start as lower case.
+===== Structure =====
+
+====== Examples ======
+<pre style="white-space: pre-wrap; 
+white-space: -moz-pre-wrap; 
+white-space: -pre-wrap; 
+white-space: -o-pre-wrap; 
+word-wrap: break-word;">
+	void example(){
+		...
+	}
+</pre>
+<pre style="white-space: pre-wrap; 
+white-space: -moz-pre-wrap; 
+white-space: -pre-wrap; 
+white-space: -o-pre-wrap; 
+word-wrap: break-word;">
+	int integerExample(){
+		...
+	}
+</pre>
+<pre style="white-space: pre-wrap; 
+white-space: -moz-pre-wrap; 
+white-space: -pre-wrap; 
+white-space: -o-pre-wrap; 
+word-wrap: break-word;">
+	int integerExample(int integerVariable){
+		...
+	}
+</pre>
+<pre style="white-space: pre-wrap; 
+white-space: -moz-pre-wrap; 
+white-space: -pre-wrap; 
+white-space: -o-pre-wrap; 
+word-wrap: break-word;">
+	int integerExamp|le(int integerVariable, int integerVariable2){
+		...			|
+	}				|
+</pre> =>
+<pre style="white-space: pre-wrap; 
+white-space: -moz-pre-wrap; 
+white-space: -pre-wrap; 
+white-space: -o-pre-wrap; 
+word-wrap: break-word;">
+	int integerExamp|le(
+		int integer|Variable, 
+		int integer|Variable2){
+		...			|
+	}				|
+</pre>
+==== Switch ====
+
+===== Structure =====
+====== Examples ======
+<pre style="white-space: pre-wrap; 
+white-space: -moz-pre-wrap; 
+white-space: -pre-wrap; 
+white-space: -o-pre-wrap; 
+word-wrap: break-word;">
+	switch(integerExample){
+		case 0:
+			...
+		break;
+		
+		case 2:
+			...
+		break;
+		
+		case 3:
+			...
+		break;
+		
+		default:
+			...
+	}
+</pre>
+<pre style="white-space: pre-wrap; 
+white-space: -moz-pre-wrap; 
+white-space: -pre-wrap; 
+white-space: -o-pre-wrap; 
+word-wrap: break-word;">
+	switch(enumCharExample){
+		case EnumExample.constantNoSignal:
+			...
+		break;
+		
+		case EnumExample.constantOnline:
+			...
+		break;
+		
+		default:
+			...
+	}
+</pre>
+<pre style="white-space: pre-wrap; 
+white-space: -moz-pre-wrap; 
+white-space: -pre-wrap; 
+white-space: -o-pre-wrap; 
+word-wrap: break-word;">
+	switch(enumIntegerExample){
+		case EnumExample.constant|NoSignal:
+			...					 |
+		break;					 |
+								 |
+		case EnumExample.constant|Online:
+			...					 |
+		break;					 |
+								 |
+		default:				 |
+			...					 |
+	}				
+</pre> =>
+<pre style="white-space: pre-wrap; 
+white-space: -moz-pre-wrap; 
+white-space: -pre-wrap; 
+white-space: -o-pre-wrap; 
+word-wrap: break-word;">
+	switch(enumIntegerExample){
+		case EnumExample.constant|NoSignal:
+			...					 |
+		break;					 |
+								 |
+		case EnumExample.constant|Online:
+			...					 |
+		break;					 |
+								 |
+		default:				 |
+			...					 |
+	}							 |
+</pre>
+==== Loops ====
+
+===== Structure =====
+====== Examples ======
+<pre style="white-space: pre-wrap; 
+white-space: -moz-pre-wrap; 
+white-space: -pre-wrap; 
+white-space: -o-pre-wrap; 
+word-wrap: break-word;">
+	while(booleanExample){
+		...
+	}
+</pre>
+<pre style="white-space: pre-wrap; 
+white-space: -moz-pre-wrap; 
+white-space: -pre-wrap; 
+white-space: -o-pre-wrap; 
+word-wrap: break-word;">
+	do{
+		...
+	}while(booleanExample);
+</pre>
+<pre style="white-space: pre-wrap; 
+white-space: -moz-pre-wrap; 
+white-space: -pre-wrap; 
+white-space: -o-pre-wrap; 
+word-wrap: break-word;">
+	for(unsigned int integerIndex=0; integerIndex<100; integerIndex++){
+		...
+	}
+</pre>
+<pre style="white-space: pre-wrap; 
+white-space: -moz-pre-wrap; 
+white-space: -pre-wrap; 
+white-space: -o-pre-wrap; 
+word-wrap: break-word;">
+	for(unsigned int| integerIndex=0; integerIndex<100; integerIndex++){
+		...			|
+	}				|
+</pre> =>
+<pre style="white-space: pre-wrap; 
+white-space: -moz-pre-wrap; 
+white-space: -pre-wrap; 
+white-space: -o-pre-wrap; 
+word-wrap: break-word;">
+	for(unsigned int| integerIndex=0; integerIndex<100; integerIndex++){
+		...			|
+	}				|
+</pre>
+==== Conditionals ====
+
+===== Structure =====
+*	Do NOT use "else if", use "else" and inside it "if";
+*	Do NOT use ternary operators.
+====== Examples ======
+<pre style="white-space: pre-wrap; 
+white-space: -moz-pre-wrap; 
+white-space: -pre-wrap; 
+white-space: -o-pre-wrap; 
+word-wrap: break-word;">
+	if(booleanExample){
+		...
+	}
+</pre>
+<pre style="white-space: pre-wrap; 
+white-space: -moz-pre-wrap; 
+white-space: -pre-wrap; 
+white-space: -o-pre-wrap; 
+word-wrap: break-word;">
+	if(booleanExample){
+		...
+	}else{
+		...
+	}
+</pre>
+<pre style="white-space: pre-wrap; 
+white-space: -moz-pre-wrap; 
+white-space: -pre-wrap; 
+white-space: -o-pre-wrap; 
+word-wrap: break-word;">
+	if(booleanExample){
+		...
+	}else if(booleanExample2){
+		...
+	}
+</pre> =>
+<pre style="white-space: pre-wrap; 
+white-space: -moz-pre-wrap; 
+white-space: -pre-wrap; 
+white-space: -o-pre-wrap; 
+word-wrap: break-word;">
+	if(booleanExample){
+		...
+	}else{
+		if(booleanExample2){
+			...
+		}
+	}
+</pre>
+==== Struct ====
+===== Structure =====
+*	Write it as a class.
+====== Examples ======
+<pre style="white-space: pre-wrap; 
+white-space: -moz-pre-wrap; 
+white-space: -pre-wrap; 
+white-space: -o-pre-wrap; 
+word-wrap: break-word;">
+	struct Example {
+		int integerExample;
+		char characterExample;
+	};
+</pre>
+==== Enumerator (Enum) ====
+===== Structure =====
+*	Write it as a class.
+*	Type should specify on name (defalult: integer), if possible.
+====== Examples ======
+<pre style="white-space: pre-wrap; 
+white-space: -moz-pre-wrap; 
+white-space: -pre-wrap; 
+white-space: -o-pre-wrap; 
+word-wrap: break-word;">
+	enum Planet{
+		constantMercury(3.303e+23, 2.4397e6),
+		constantVenus(4.869e+24, 6.0518e6),
+		constantEarth(5.976e+24, 6.37814e6),
+		constantMars(6.421e+23, 3.3972e6),
+		constantJupter(1.9e+27, 7.1492e7),
+		constantSaturn(5.688e+26, 6.0268e7),
+		constantUranus(8.686e+25, 2.5559e7),
+		constantNeptune(1.024e+26, 2.4746e7);
+		
+		private final double doubleKilogramsMass;
+		private final double doubleMetersRadius;
+		
+		Planet(doubleKilogramsMass, doubleMetersRadius){
+			setDoubleKilogramsMass(doubleKilogramsMass);
+			setDoubleMetersRadius(doubleMetersRadius);
+		}
+		
+		public double getDoubleKilogramsMass(){
+			return this.doubleKilogramsMass;
+		}
+		
+		public double getDoubleMetersRadius(){
+			return this.doubleMetersRadius;
+		}
+		
+		private void setDoubleKilogramsMass(double doubleKilogramsMass){
+			this.doubleKilogramsMass = doubleKilogramsMass;
+		}
+		
+		public void setDoubleMetersRadius(double doubleMetersRadius){
+			this.doubleMetersRadius = doubleMetersRadius;
+		}
+	}
+</pre>
+<pre style="white-space: pre-wrap; 
+white-space: -moz-pre-wrap; 
+white-space: -pre-wrap; 
+white-space: -o-pre-wrap; 
+word-wrap: break-word;">
+	enum IntegerDay{
+		constantSunday,
+		constantMonday,
+		constantTuesday,
+		constantWednesday,
+		constantThursday,
+		constantFriday,
+		constantSaturday;
+	}
+</pre>

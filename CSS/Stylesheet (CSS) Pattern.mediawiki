@@ -1,0 +1,98 @@
+= Stylesheet (CSS) Pattern =
+
+== Mandatory ==
+*	Read and follow the Object Oriented Programming Languages Pattern. 
+*	The extension of stylesheets files (CSS) should be always ".php".
+
+=== Selectors ===
+==== Id and Class ====
+*	Write as a class of Object Oriented Programming Languages Pattern, unless you are using a HTML default structure.
+===== Structure =====
+===== Examples =====
+<pre style="white-space: pre-wrap; 
+white-space: -moz-pre-wrap; 
+white-space: -pre-wrap; 
+white-space: -o-pre-wrap; 
+word-wrap: break-word;">
+	#IdExample{
+		text-align:center;
+		color:red;
+	}
+</pre>
+<pre style="white-space: pre-wrap; 
+white-space: -moz-pre-wrap; 
+white-space: -pre-wrap; 
+white-space: -o-pre-wrap; 
+word-wrap: break-word;">
+	#.ClassExample{
+		text-align:center;
+		color:red;
+	}
+</pre>
+<pre style="white-space: pre-wrap; 
+white-space: -moz-pre-wrap; 
+white-space: -pre-wrap; 
+white-space: -o-pre-wrap; 
+word-wrap: break-word;">
+	#SomeHTMLElement.ClassExample{
+		text-align:center;
+		color:red;
+	}
+</pre>
+<pre style="white-space: pre-wrap; 
+white-space: -moz-pre-wrap; 
+white-space: -pre-wrap; 
+white-space: -o-pre-wrap; 
+word-wrap: break-word;">
+	body{
+		padding: <?php echo $bodyPadding;?>px;
+		margin: <?php echo $bodyMargin;?>px;
+		width: <?php echo $bodyMinWidthPercentage;?>%;
+		color: <?php echo $baseColor;?>;
+	}
+</pre>
+==== Properties ====
+*	Write as a variable of Object Oriented Programming Languages Pattern.
+*	Use php variables.
+===== Examples =====
+*	<code>padding: 10px;</code> => <code>padding: <?php echo $bodyPadding;?>px;</code>
+*	<code>color: #FFFFFF;</code> => <code>color: <?php echo $baseColor;?>;</code>
+===== Stylesheet File Header =====
+*	Should include the php file with instantiated variables.
+====== Examples ======
+<pre style="white-space: pre-wrap; 
+white-space: -moz-pre-wrap; 
+white-space: -pre-wrap; 
+white-space: -o-pre-wrap; 
+word-wrap: break-word;">
+	<?php
+		header("Content-type: text/css; charset: UTF-8");
+		header('Cache-control: must-revalidate');
+		include 'colors/style.php';
+		include 'size.php';
+	?>
+</pre>
+==== HTML include ====
+====== Examples ======
+<code><link rel="stylesheet" href="stylesheets/colors/style.php" media="screen" type="text/css"/></code>
+==== File Example ====
+====== Examples ======
+<pre style="white-space: pre-wrap; 
+white-space: -moz-pre-wrap; 
+white-space: -pre-wrap; 
+white-space: -o-pre-wrap; 
+word-wrap: break-word;">
+	<?php
+		header("Content-type: text/css; charset: UTF-8");
+		header('Cache-control: must-revalidate');
+		include 'colors/style.php';
+		include 'size.php';
+	?>
+
+	body{
+		padding: <?php echo $bodyPadding;?>px;
+		margin: <?php echo $bodyMargin;?>px;
+		width: <?php echo $bodyMinWidthPercentage;?>%;
+		color: <?php echo $baseColor;?>;
+	}
+</pre>
