@@ -5,6 +5,7 @@
 *	Do NOT use acronyms and reduced words.
 *	All code should be written in english.
 *	The name of every structure should show the type of the structure, unless its void or a class.
+*	Do NOT use special characters like: _.
 === Structure ===
 *	Tab size should be equivalent to 5 spaces.
 *	If structure ultrapass 100 charateres wrap where necessary.
