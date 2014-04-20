@@ -6,6 +6,11 @@
 *	All code should be written in english.
 *	The name of every structure should show the type of the structure, unless its void or a class.
 *	Do NOT use special characters like: _.
+*	Given name (doesn't matter if it is variable, method, class, or etc.) should consist of a more general to more specific feature, from left to right like this: data type + given name (if different from the data type)  + relative type (if any) + state (if any).
+=== Examples ===
+*	<code>int port; -> </code> => <code>int integerPortLocal;</code>
+*	<code>int portHost; -> </code> => <code>int integerPortHost;</code>
+*	<code>SocketAddress socketAddress; -> </code> => <code>SocketAddress socketAddressLocal;</code>
 === Structure ===
 *	Tab size should be equivalent to 5 spaces.
 *	If structure ultrapass 100 charateres wrap where necessary.
