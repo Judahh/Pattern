@@ -74,7 +74,7 @@ word-wrap: break-word;">
 </pre>
 ==== HTML include ====
 ====== Examples ======
-<code><link rel="stylesheet" href="stylesheets/colors/style.php" media="screen" type="text/css"/></code>
+<code><link rel="stylesheet" href="Stylesheets/Colors/Style.php" media="screen" type="text/css"/></code>
 ==== File Example ====
 ====== Examples ======
 <pre style="white-space: pre-wrap; 
