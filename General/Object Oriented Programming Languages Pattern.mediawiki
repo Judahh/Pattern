@@ -29,6 +29,8 @@
 *	<code>\Zend\Mail\Message</code> => <code>/Path/To/Project/Library/Vendor/Java/Zend/Mail/Message.java</code>
 === Classes, Objects, Variables, Functions, Methods and other structures ===
 *	If possible always make its visibility private, if not make them protected, if still not possible then you make them public.
+==== Constructor ====
+*	(TODO)Ver baseado no PHP feito...
 ==== Classes ====
 *	Should start as upper case.
 *	If possible always use one file for a single class.

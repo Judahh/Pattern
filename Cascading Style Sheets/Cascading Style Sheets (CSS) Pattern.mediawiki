@@ -1,4 +1,4 @@
-= Stylesheet (CSS) Pattern =
+= Cascading Style Sheets (CSS) Pattern =
 
 == Mandatory ==
 *	Read and follow the Object Oriented Programming Languages Pattern. 

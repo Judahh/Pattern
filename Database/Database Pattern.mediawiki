@@ -1,0 +1,10 @@
+= Database Pattern =
+
+== Mandatory ==
+*	Read and follow the Object Oriented Programming Languages Pattern.
+*	The name of Databases and Tables should be as the name of classes.
+*	The name of Columns should be as the name of variables.
+=== Examples ===
+*	<code>Column (integer) integerPortLocal;</code>
+*	<code>Table TableUser;</code>
+*	<code>Database DatabaseEnterprise;</code>
