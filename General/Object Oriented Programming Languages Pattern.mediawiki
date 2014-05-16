@@ -282,8 +282,8 @@ white-space: -pre-wrap;
 white-space: -o-pre-wrap; 
 word-wrap: break-word;">
 	for(unsigned int| unsignedIntIndex=0; unsignedIntIndex<100; unsignedIntIndex++){
-		...			|
-	}				|
+		...	|
+	}		|
 </pre>
 ==== Conditionals ====
 
