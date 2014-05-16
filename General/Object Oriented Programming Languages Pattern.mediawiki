@@ -123,7 +123,7 @@ white-space: -moz-pre-wrap;
 white-space: -pre-wrap; 
 white-space: -o-pre-wrap; 
 word-wrap: break-word;">
-	int integerExample(){
+	int intExample(){
 		...
 	}
 </pre>
@@ -132,7 +132,7 @@ white-space: -moz-pre-wrap;
 white-space: -pre-wrap; 
 white-space: -o-pre-wrap; 
 word-wrap: break-word;">
-	int integerExample(int intVariable){
+	int intExample(int intVariable){
 		...
 	}
 </pre>
@@ -141,7 +141,7 @@ white-space: -moz-pre-wrap;
 white-space: -pre-wrap; 
 white-space: -o-pre-wrap; 
 word-wrap: break-word;">
-	int integerExamp|le(int intVariable, int intVariable2){
+	int intExamp|le(int intVariable, int intVariable2){
 		...			|
 	}				|
 </pre> =>
@@ -150,7 +150,7 @@ white-space: -moz-pre-wrap;
 white-space: -pre-wrap; 
 white-space: -o-pre-wrap; 
 word-wrap: break-word;">
-	int integerExamp|le(
+	int intExamp|le(
 		int int|Variable, 
 		int int|Variable2){
 		...			|
@@ -165,7 +165,7 @@ white-space: -moz-pre-wrap;
 white-space: -pre-wrap; 
 white-space: -o-pre-wrap; 
 word-wrap: break-word;">
-	switch(integerExample){
+	switch(intExample){
 		case 0:
 			...
 		break;
@@ -205,7 +205,7 @@ white-space: -moz-pre-wrap;
 white-space: -pre-wrap; 
 white-space: -o-pre-wrap; 
 word-wrap: break-word;">
-	switch(enumIntegerExample){
+	switch(enumIntExample){
 		case EnumExample.constant|NoSignal:
 			...					 |
 		break;					 |
@@ -223,7 +223,7 @@ white-space: -moz-pre-wrap;
 white-space: -pre-wrap; 
 white-space: -o-pre-wrap; 
 word-wrap: break-word;">
-	switch(enumIntegerExample){
+	switch(enumIntExample){
 		case EnumExample.constant|NoSignal:
 			...					 |
 		break;					 |
@@ -263,7 +263,7 @@ white-space: -moz-pre-wrap;
 white-space: -pre-wrap; 
 white-space: -o-pre-wrap; 
 word-wrap: break-word;">
-	for(unsigned int integerIndex=0; integerIndex<100; integerIndex++){
+	for(unsigned int unsignedIntIndex=0; unsignedIntIndex<100; unsignedIntIndex++){
 		...
 	}
 </pre>
@@ -272,7 +272,7 @@ white-space: -moz-pre-wrap;
 white-space: -pre-wrap; 
 white-space: -o-pre-wrap; 
 word-wrap: break-word;">
-	for(unsigned int| integerIndex=0; integerIndex<100; integerIndex++){
+	for(unsigned int| unsignedIntIndex=0; unsignedIntIndex<100; unsignedIntIndex++){
 		...			|
 	}				|
 </pre> =>
@@ -281,7 +281,7 @@ white-space: -moz-pre-wrap;
 white-space: -pre-wrap; 
 white-space: -o-pre-wrap; 
 word-wrap: break-word;">
-	for(unsigned int| integerIndex=0; integerIndex<100; integerIndex++){
+	for(unsigned int| unsignedIntIndex=0; unsignedIntIndex<100; unsignedIntIndex++){
 		...			|
 	}				|
 </pre>
@@ -345,14 +345,14 @@ white-space: -pre-wrap;
 white-space: -o-pre-wrap; 
 word-wrap: break-word;">
 	struct Example {
-		int integerExample;
-		char characterExample;
+		int intExample;
+		char charExample;
 	};
 </pre>
 ==== Enumerator (Enum) ====
 ===== Structure =====
 *	Write it as a class.
-*	Type should specify on name (defalult: integer), if possible.
+*	Type should specify on name (defalult: int), if possible.
 ====== Examples ======
 <pre style="white-space: pre-wrap; 
 white-space: -moz-pre-wrap; 
@@ -399,7 +399,7 @@ white-space: -moz-pre-wrap;
 white-space: -pre-wrap; 
 white-space: -o-pre-wrap; 
 word-wrap: break-word;">
-	enum IntegerDay{
+	enum IntDay{
 		constantSunday,
 		constantMonday,
 		constantTuesday,
