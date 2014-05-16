@@ -98,7 +98,7 @@ word-wrap: break-word;">
 *	Should start as lower case.
 *	Always make getters and setters.
 ===== Examples =====
-*	<code>int idade</code> => <code>int integerAge</code>
+*	<code>int idade</code> => <code>int intAge</code>
 *	<code>new Database main</code> => <code>new Database databaseMain</code>
 ===== Constants =====
 *	Constants should specify on name.
@@ -132,7 +132,7 @@ white-space: -moz-pre-wrap;
 white-space: -pre-wrap; 
 white-space: -o-pre-wrap; 
 word-wrap: break-word;">
-	int integerExample(int integerVariable){
+	int integerExample(int intVariable){
 		...
 	}
 </pre>
@@ -141,7 +141,7 @@ white-space: -moz-pre-wrap;
 white-space: -pre-wrap; 
 white-space: -o-pre-wrap; 
 word-wrap: break-word;">
-	int integerExamp|le(int integerVariable, int integerVariable2){
+	int integerExamp|le(int intVariable, int intVariable2){
 		...			|
 	}				|
 </pre> =>
@@ -151,8 +151,8 @@ white-space: -pre-wrap;
 white-space: -o-pre-wrap; 
 word-wrap: break-word;">
 	int integerExamp|le(
-		int integer|Variable, 
-		int integer|Variable2){
+		int int|Variable, 
+		int int|Variable2){
 		...			|
 	}				|
 </pre>
