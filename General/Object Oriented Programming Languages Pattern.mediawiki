@@ -33,7 +33,40 @@
 === Classes, Objects, Variables, Functions, Methods and other structures ===
 *	If possible always make its visibility private, if not make them protected, if still not possible then you make them public.
 ==== Constructor ====
-*	(TODO)Ver baseado no PHP feito...
+*	Always the constructor should have all possible elements, and should be private.
+*	To instantiate the class, should have a static method to call the constructor and return the object.
+===== Examples =====
+<pre style="white-space: pre-wrap; 
+white-space: -moz-pre-wrap; 
+white-space: -pre-wrap; 
+white-space: -o-pre-wrap; 
+word-wrap: break-word;">
+	private function __construct($stringName, $stringType, $stringClassElement) {
+		$this->stringName = $stringName;
+		$this->stringType = $stringType;
+		$this->stringClassElement = $stringClassElement;
+		$this->stringPseudoClass = "";
+		$this->stringPseudoElement = "";
+		$this->attribute = "";
+		$this->listDeclaration = array();
+	}
+
+	//Constructors
+	//   instantiation: 
+	//      $selector = Selector::SelectorWithStringName($stringName);
+	//      $selector = Selector::SelectorWithStringNameWithStringType($stringName, $stringType);
+       	
+	public static function SelectorWithStringName($stringName) {
+		$instance = new self($stringName, "", "");
+		return $instance;
+	}
+
+       	public static function SelectorWithStringNameWithStringType($stringName, $stringType) {
+		$instance = new self($stringName, $stringType, "");
+		return $instance;
+	}
+
+</pre>
 ==== Classes ====
 *	Should start as upper case.
 *	If possible always use one file for a single class.
