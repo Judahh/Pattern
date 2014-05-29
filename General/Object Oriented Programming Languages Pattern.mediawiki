@@ -53,15 +53,15 @@ word-wrap: break-word;">
 
 	//Constructors
 	//   instantiation: 
-	//      $selector = Selector::SelectorWithStringName($stringName);
-	//      $selector = Selector::SelectorWithStringNameWithStringType($stringName, $stringType);
+	//      $selector = Selector::selectorWithStringName($stringName);
+	//      $selector = Selector::selectorWithStringNameWithStringType($stringName, $stringType);
        	
-	public static function SelectorWithStringName($stringName) {
+	public static function selectorWithStringName($stringName) {
 		$instance = new self($stringName, "", "");
 		return $instance;
 	}
 
-       	public static function SelectorWithStringNameWithStringType($stringName, $stringType) {
+       	public static function selectorWithStringNameWithStringType($stringName, $stringType) {
 		$instance = new self($stringName, $stringType, "");
 		return $instance;
 	}
@@ -139,6 +139,7 @@ word-wrap: break-word;">
 *	<code>const double precoFixo</code> => <code>const double constantDoubleFixedPrice</code>
 ==== Functions and Methods ====
 *	Should start as lower case.
+*	The method name should have the parameters.
 ===== Structure =====
 
 ====== Examples ======
@@ -165,7 +166,7 @@ white-space: -moz-pre-wrap;
 white-space: -pre-wrap; 
 white-space: -o-pre-wrap; 
 word-wrap: break-word;">
-	int intExample(int intVariable){
+	int intExampleWithIntVariable(int intVariable){
 		...
 	}
 </pre>
@@ -174,7 +175,7 @@ white-space: -moz-pre-wrap;
 white-space: -pre-wrap; 
 white-space: -o-pre-wrap; 
 word-wrap: break-word;">
-	int intExamp|le(int intVariable, int intVariable2){
+	int intExamp|leWithIntVariableWithIntVariable2(int intVariable, int intVariable2){
 		...			|
 	}				|
 </pre> =>
@@ -183,7 +184,7 @@ white-space: -moz-pre-wrap;
 white-space: -pre-wrap; 
 white-space: -o-pre-wrap; 
 word-wrap: break-word;">
-	int intExamp|le(
+	int intExamp|leWithIntVariableWithIntVariable2(
 		int int|Variable, 
 		int int|Variable2){
 		...			|
