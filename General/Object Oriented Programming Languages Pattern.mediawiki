@@ -140,9 +140,28 @@ word-wrap: break-word;">
 ==== Functions and Methods ====
 *	Should start as lower case.
 *	The method name should have the parameters.
+*	GET and SET prefixes should only be used for those methods that really set and get real variables.
 ===== Structure =====
 
 ====== Examples ======
+<pre style="white-space: pre-wrap; 
+white-space: -moz-pre-wrap; 
+white-space: -pre-wrap; 
+white-space: -o-pre-wrap; 
+word-wrap: break-word;">
+	void setStringExampleWithString(String string){
+		this.stringExample = string;
+	}
+</pre>
+<pre style="white-space: pre-wrap; 
+white-space: -moz-pre-wrap; 
+white-space: -pre-wrap; 
+white-space: -o-pre-wrap; 
+word-wrap: break-word;">
+	String getStringExample(){
+		return this.stringExample;
+	}
+</pre>
 <pre style="white-space: pre-wrap; 
 white-space: -moz-pre-wrap; 
 white-space: -pre-wrap; 
