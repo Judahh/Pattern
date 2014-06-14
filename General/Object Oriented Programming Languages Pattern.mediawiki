@@ -70,6 +70,7 @@ word-wrap: break-word;">
 ==== Classes ====
 *	Should start as upper case.
 *	If possible always use one file for a single class.
+*	The child class must start with the name of the father.
 ===== Structure =====
 ===== Examples =====
 <pre style="white-space: pre-wrap; 
@@ -95,7 +96,7 @@ white-space: -moz-pre-wrap;
 white-space: -pre-wrap; 
 white-space: -o-pre-wrap; 
 word-wrap: break-word;">
-	class Example extends OtherClass{
+	class ExampleFatherChild extends ExampleFather{
 		...
 	}
 </pre>
@@ -104,7 +105,7 @@ white-space: -moz-pre-wrap;
 white-space: -pre-wrap; 
 white-space: -o-pre-wrap; 
 word-wrap: break-word;">
-	class Example ex|tends OtherClass{
+	class ExampleFatherChild ex|tends ExampleFather{
 		...			|
 	}				|
 </pre> =>
@@ -113,8 +114,8 @@ white-space: -moz-pre-wrap;
 white-space: -pre-wrap; 
 white-space: -o-pre-wrap; 
 word-wrap: break-word;">
-	class Example ex|tends
-		OtherClass{	|
+	class ExampleFatherChild ex|tends
+		ExampleFather{	|
 		...			|
 	}				|
 </pre>
