@@ -141,7 +141,7 @@ word-wrap: break-word;">
 ==== Functions and Methods ====
 *	Should start as lower case.
 *	The method name should have the parameters.
-*	GET and SET prefixes should only be used for those methods that really set and get real variables.
+*	GET and SET prefixes should only be used for those methods that really set and get real variables. And do NOT use IS for boolean variables.
 ===== Structure =====
 
 ====== Examples ======
